@@ -1,0 +1,8 @@
+# 鲸鱼娘插件 —— profile 补丁模板
+# 把下面的 insert 合并进你自己的 profile 的 cordis.patch.yml：
+#   - 若该文件当前是空数组 `[]` 或不存在：整段使用
+#   - 若已有其他行：把这段追加到数组末尾（缩进与其他行一致）
+# 更新插件后记得把 name 里的 ?v= 数字 +1 才能热更新（ESM 缓存）。
+- insert:
+    - id: whale-balance-widget
+      name: ./whale-balance.mjs?v=1
